@@ -1,19 +1,20 @@
-# PJM Electricity Price Forecasting Model
-> 📈 A LightGBM based hour-level electricity price prediction project for power trading strategy reference.
+# PJM COMED 电力现货电价预测模型
+> 📈 基于LightGBM的小时级电力现货价格预测项目，为电力交易报价策略、风险管控提供量化支撑
 
-## Project Introduction
-This project builds a machine learning model to predict the hourly spot price of electricity in the **PJM COMED** region (USA). 
-The model results can provide data-driven decision support for power traders, including price forecasting and risk control.
+## 项目简介
+本项目基于美国PJM电力市场COMED区域公开数据，使用Python搭建机器学习模型，实现**小时级电力现货价格精准预测**。
+模型结果可直接为电力交易员提供数据驱动的决策支持，包括电价走势研判、报价策略优化、交易风险管控。
 
-## Tech Stack
-- **Language**: Python 3.8+
-- **Data Processing**: Pandas, NumPy
-- **Modeling**: LightGBM (Regressor)
-- **Visualization**: Matplotlib, Seaborn
+## 技术栈
+- **开发语言**：Python 3.8+
+- **数据处理**：Pandas、NumPy（时序数据清洗、多源数据融合）
+- **机器学习**：LightGBM（回归模型）、Scikit-learn（模型评估、特征工程）
+- **可视化**：Matplotlib、Seaborn（预测对比曲线、特征重要性分析）
 
-## Project Structure
-├── data/ # Dataset directory (include historical price/load/temperature)
-├── results/ # Generated forecast charts and feature importance graphs
-├── main.ipynb # Main training code (Jupyter Notebook)
-├── requirements.txt # Python dependencies
-└── README.md # Project description
+## 项目结构
+
+├── data/ # 数据集目录（包含历史电价、区域负荷、系统负荷、温度等时序数据）
+├── results/ # 结果目录（生成预测对比图表、特征重要性图、模型评估指标）
+├── main.ipynb # 主训练代码（Jupyter Notebook，全流程可复现）
+├── requirements.txt # Python 依赖包列表
+└── README.md # 项目说明文档
